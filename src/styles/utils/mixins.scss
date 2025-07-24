@@ -1,5 +1,11 @@
 @mixin on-tablet {
-  @media (min-width: $tablet-min-width){
+  @media (min-width: $tablet-min-width) {
+    @content;
+  }
+}
+
+@mixin on-desktop {
+  @media (min-width: $desktop-min-width) {
     @content;
   }
 }
@@ -9,5 +15,15 @@
 
   @include on-tablet {
     padding-inline: 72px;
+  }
+}
+
+@mixin hover($property, $toValue) {
+  transition:
+    #{$property},
+    $transition-time;
+
+  &:hover {
+    #{$property}: $toValue;
   }
 }

@@ -7,7 +7,7 @@
   "printWidth": 80,
   "overrides": [
     {
-      "files": "*.html",
+      "files": "*.",
       "options": {
         "parser": "html",
         "insertPragma": false,
