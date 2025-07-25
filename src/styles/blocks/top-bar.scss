@@ -4,14 +4,14 @@
   justify-content: space-between;
   padding-block: 24px;
 
-  @include content-padding-inline;
-
   @include on-tablet {
     padding-block: 36px;
   }
+
   &__icons {
     display: flex;
     gap: 24px;
+    text-align: center;
   }
 
   &__logo-link {

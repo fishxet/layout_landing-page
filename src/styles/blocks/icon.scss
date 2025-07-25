@@ -12,11 +12,38 @@
   }
 
   &--phone {
+    position: relative;
     background-image: url(../icons/Icon-Phone-call.svg);
+    &-number {
+      position: absolute;
+      top: 50%;
+      right: 100%;
+      transform: translateX(-20px) translateY(-50%);
+
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 16px;
+      color: $main-text-color;
+      text-decoration: none;
+      white-space: nowrap;
+
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    @include on-desktop {
+      &:hover &-number {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
   }
 
   &--burger {
     background-image: url(../icons/Icon-Burger-menu.svg);
+    &:hover {
+      background-image: url(../icons/Icon-Burger-menu-hover.png);
+    }
   }
 
   &--close {
