@@ -4,7 +4,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./icons/favicon.png" />
+    <link
+    rel="icon"
+    type="image/x-icon"
+    href="./icons/favicon.png"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -26,7 +30,7 @@
             <a href="#" class="top-bar__logo-link">
               <img
                 class="top-bar__logo"
-                src="image/MyBiKE.svg"
+                src="image/MyBiKE.png"
                 alt="BIKE_logo"
               />
             </a>
@@ -51,7 +55,7 @@
           <a href="#" class="top-bar__logo-link">
             <img
               class="top-bar__logo"
-              src="image/MyBiKE-black.svg"
+              src="image/MyBiKE-black.png"
               alt="BIKE_logo"
             />
           </a>
@@ -226,7 +230,7 @@
               </article>
 
               <div class="details__button">
-                <a class="button details__button--center">Explore</a>
+                <a href="#compare-bikes" class="button details__button--center">Explore</a>
               </div>
             </div>
           </section>
@@ -234,11 +238,35 @@
           <section class="contact-us" id="contact-us">
             <h2 class="section-title">Contact Us</h2>
             <div class="contact-us__container">
-              <form>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="Message">
+              <form class="form" method="post">
+                <input
+                  class="form__input form__input--name"
+                  type="text"
+                  placeholder="Name"
+                />
+                <input
+                  class="form__input form__input--email"
+                  type="email"
+                  placeholder="Email"
+                />
+                <textarea
+                  class="form__input form__input--message"
+                  type="text"
+                  placeholder="Message"
+                >
+                </textarea>
+                <button class="button form__button" type="submit">Send</button>
               </form>
+              <div class="contact-us__info">
+                <h4 class="contact-us__title">Phone</h4>
+                <p class="contact-us__description">+1 234 5555-55-55</p>
+                <h4 class="contact-us__title">Email</h4>
+                <p class="contact-us__description">hello@miami.com</p>
+                <h4 class="contact-us__title">Address</h4>
+                <p class="contact-us__description">
+                  400 first ave.<br />suite 700<br />Minneapolis, MN 55401
+                </p>
+              </div>
             </div>
           </section>
         </div>
