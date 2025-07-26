@@ -1,0 +1,25 @@
+.button {
+    padding-block: 14px;
+    padding-inline: 48px;
+    border: none;
+    border-radius: 40px;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+    color: #1d1d1d;
+    text-align: center;
+    letter-spacing: 0;
+
+    background-color: #fff;
+
+  transition: all $transition-time;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 1px 4px 16px  rgba(232, 235, 240, 0.4);
+    }
+    &:hover:active {
+      cursor: pointer;
+      box-shadow: 1px 4px 16px rgba(232, 235, 240, 0.64);
+    }
+}
